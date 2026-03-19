@@ -9,3 +9,5 @@ asciidoc:
     lab_name: "OpenShift Advanced App Platform"
     release-version: master
     page-pagination: true
+    # Include shared attributes file
+    page-attributes: attributes.adoc
