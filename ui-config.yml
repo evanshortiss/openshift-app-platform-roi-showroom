@@ -2,7 +2,7 @@
 type: showroom
 
 # Set the left column width to 30%
-default_width: 30
+default_width: 40
 # Persist the URL state so browser refresh doesn't reset the UI
 persist_url_state: true
 
@@ -12,22 +12,17 @@ view_switcher:
 
 tabs:
   # OCP Console
-  - name: OCP Console
+  - name: OpenShift Console
     url: 'https://console-openshift-console.${DOMAIN}'
 
-  # Single terminal
-  - name: Bastion
-    path: /wetty
-    port: 443
+  # Argo CD Console
+  - name: GitOps Console
+    url: 'https://openshift-gitops-server-openshift-gitops.${DOMAIN}'
 
-  # Vertical split terminals
-  # - name: Bastion
-  #   path: /wetty
-  #   port: 443
-  #   secondary_name: Bastion
-  #   secondary_path: /wetty
-  #   secondary_port: 443
+  # Argo CD Console
+  - name: Sonarqube Console
+    url: 'https://sonarqube-sonarqube.${DOMAIN}/dashboard?id=parasol-insurance-user-{guid}'
 
-  # External page
-  - name: Llamastack Docs
-    url: 'https://llama-stack.readthedocs.io/en/latest/'
+  # DevSpaces Console
+  - name: Sonarqube Console
+    url: 'https://devspaces.${DOMAIN}/dashboard
