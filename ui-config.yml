@@ -21,7 +21,7 @@ tabs:
 
   # Argo CD Console
   - name: Sonarqube Console
-    url: 'https://sonarqube-sonarqube.${DOMAIN}/dashboard?id=parasol-insurance-user-{guid}/'
+    url: 'https://sonarqube-sonarqube.${DOMAIN}/dashboard?id=parasol-insurance-user-${GUID}/'
 
   # DevSpaces Console
   - name: Dev Spaces Console
