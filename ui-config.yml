@@ -11,18 +11,17 @@ view_switcher:
   default_mode: split
 
 tabs:
-  # OCP Console
   - name: OpenShift Console
     url: 'https://console-openshift-console.${DOMAIN}/'
 
-  # Argo CD Console
-  - name: GitOps Console
+  - name: Argo CD
     url: 'https://openshift-gitops-server-openshift-gitops.${DOMAIN}/'
 
-  # Argo CD Console
-  - name: Sonarqube Console
-    url: 'https://sonarqube-sonarqube.${DOMAIN}/dashboard?id=parasol-insurance-user-${GUID}/'
+  - name: SonarQube
+    url: 'https://sonarqube-sonarqube.${DOMAIN}/dashboard?id=parasol-insurance-user-${GUID}'
 
-  # DevSpaces Console
-  - name: Dev Spaces Console
+  - name: Dev Spaces
     url: 'https://devspaces.${DOMAIN}/dashboard'
+
+  - name: GitLab
+    url: 'https://gitlab-gitlab.${DOMAIN}/'
