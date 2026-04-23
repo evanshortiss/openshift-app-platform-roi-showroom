@@ -32,7 +32,8 @@ Your first task is to log into the OpenShift web console and verify that your en
 * *Password:* `{password}`
 
 . Navigate to *Home > Projects* in the *OpenShift Console*
-
++
+TIP: The various web consoles used throughout this lab have menus on the left. These menus are expanded in the screenshots shown in this lab guide. Depending on the size of your screen, these menus might be collapsed. Use the icons in top-left of each UI to expand them, e.g the OpenShift Console has an icon composed of three horizontal lines that opens/closes the side menu.
 . You should see 3 projects:
 +
 * `{build_ns}` -- where your CI/CD pipelines run
@@ -128,7 +129,7 @@ Your build namespace contains Tekton pipelines that build, test, scan, and deplo
 +
 image::m1/pipelines-build.png[OpenShift Pipelines View,link=self,window=blank,width=700,title="Tekton pipelines in the build namespace"]
 
-. A `push` link:https://docs.redhat.com/en/documentation/red_hat_openshift_pipelines/1.21/html/about_openshift_pipelines/understanding-openshift-pipelines#about-pipelinerun_understanding-openshift-pipelines[PipelineRun^] has already completed. This was triggered automatically when your environment was provisioned to pre-build and pre-deploy the Parasol Insurance application. You viewed this in the `dev` environment earlier.
+. A `push` link:https://docs.redhat.com/en/documentation/red_hat_openshift_pipelines/1.21/html/about_openshift_pipelines/understanding-openshift-pipelines#about-pipelinerun_understanding-openshift-pipelines[PipelineRun^] has already completed. This was triggered automatically when your environment was provisioned to pre-build and pre-deploy the Parasol Insurance application. You viewed this in the `{dev_ns}` environment earlier.
 
 . Click on the link in the *Last run* column to view the PipelineRun details.
 +

@@ -61,6 +61,8 @@ After the IDE has started, click *Trust Publishers & Install* to ensure the defa
 
 image::m2/devspaces-trust.png[Trust Extensions in Dev Spaces,link=self,window=blank,width=700,title="Trust and install extensions prompt"]
 
+TIP: Dismiss pop-ups in the bottom-right using the `X` icon in their top-right corner. They're not relevant for this lab.
+
 === Explore the IDE
 
 Once the workspace loads, take a moment to look around:
@@ -69,7 +71,9 @@ Once the workspace loads, take a moment to look around:
 
 * *Extensions*: In the left sidebar, click the Extensions icon to see pre-installed extensions:
 ** *RHDA* (Red Hat Dependency Analytics) -- scans your dependencies for known vulnerabilities
-** *Roo* and *Continue* -- AI coding assistants that can help you write and refactor code
+** *Continue* -- AI coding assistant that can help you write and refactor code
++
+TIP: It can take up to a minute for extensions to finish installing after accepting the prompt to trust and install them. If *Continue* is not shown, wait a moment.
 +
 image::m2/devspaces-extensions.png[Dev Spaces Extension List,link=self,window=blank,width=700,title="Pre-installed extensions in Dev Spaces"]
 +
@@ -107,7 +111,7 @@ Confirm the following before moving on:
 
 * Your Dev Spaces workspace is running and the VS Code IDE is loaded
 * The Explorer shows the `parasol-insurance` project structure
-* The Extensions panel shows RHDA, Roo, and Continue as pre-installed extensions
+* The Extensions panel shows RHDA, and Continue as pre-installed extensions
 * You can see the `devfile.yaml` in the project root
 
 == Exercise 2: Use the Continue AI coding assistant and start dev mode
@@ -120,14 +124,16 @@ The platform team at Parasol has pre-configured their OpenShift Dev Spaces envir
 
 . Click the *LiteMaaS (Opus 4.6)* model dropdown. This is the only model available for now.
 
-. Enter the following prompt:
+. Enter the following prompt. If you type the prompt yourself, you'll see that the `@` character triggers a dialog where you can select files and more:
 +
 [source,text,role=execute]
 ----
 Explain the @application.properties file. I don't know much about Quarkus.
 ----
 +
-TIP: If you type the prompt yourself, you'll see that the `@` character triggers a dialog where you can select files and more.
+TIP: *Continue* sometimes requests permission to read/write files. Click *Accept* when prompted.
++
+IMPORTANT: OpenShift Dev Spaces might request access to your clipboard when performing copy/paste. Click *Allow* if your browser requests the permission.
 
 . The model will respond with a detailed description of the `application.properties`.
 +
@@ -154,7 +160,7 @@ Developers can use agentic coding assistants to quickly gain insight into codeba
 +
 NOTE: Alternatively use the keyboard shortcut kbd:[Ctrl] + kbd:[Shift] + kbd:[P] then type "run task", then select *Tasks: Run Task* and press kbd:[Enter]. On macOS use kbd:[Cmd] instead of kbd:[Ctrl].
 
-. Select *devfile > Start Dev Mode* from the *Run Task* menu
+. Select *devfile > Start Development mode* from the *Run Task* menu
 +
 This starts Quarkus in development mode. Behind the scenes, Testcontainers spins up local Kafka and PostgreSQL instances so the full application runs inside your workspace.
 
@@ -203,6 +209,8 @@ The inbox currently displays utc-like time, but the product requirements need a 
 ----
 
 . Continue will analyze the codebase, find the relevant code (most likely the `DateTimeFormatter` pattern in `EmailRouter.java`), and propose changes. Review the suggested changes and accept them.
++
+NOTE: The model might choose to edit `inbox.html` instead, since our prompt is not particularly specific. Such is the nature of working with an LLM.
 +
 image::m2/devspaces-continue-time-format.png[Continue updating the time formatting code,link=self,window=blank,width=700,title="Continue proposing the timestamp format change"]
 

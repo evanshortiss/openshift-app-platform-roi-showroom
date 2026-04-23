@@ -5,7 +5,7 @@ include::partial$_attributes.adoc[]
 
 *Parasol Insurance* is a Quarkus-based web application that agents use to process claims, manage policies, and complete other daily functions. Additionally, the application processes and automatically categorizes incoming customer emails using simple keyword-based routing. Emails arrive via Apache Kafka, are classified and routed, and the results are displayed in an inbox-style UI. Claims and other data is persisted in Parasol's PostgreSQL database.
 
-Parasol completed an application modernization to Quarkus using https://developers.redhat.com/products/mta[Red Hat's Migration Toolkit for Applications^]. The application is already deployed and running in your environment, in both development and production configurations. Over the course of this lab you will explore, modify, and enhance it, experiencing OpenShift's Application Platform capabilities along the way. Additionally, you'll enhance the *Parasol Insurance* application with AI capabilities.
+Parasol completed an application modernization to Quarkus using https://developers.redhat.com/products/mta[Red Hat's Migration Toolkit for Applications^]. The application is already deployed and running in your OpenShift environment, in both development and production configurations. Over the course of this lab you will explore, modify, and enhance it, experiencing OpenShift's Application Platform capabilities along the way. Additionally, you'll enhance the *Parasol Insurance* application with AI capabilities.
 
 == What you will learn
 
