@@ -14,9 +14,9 @@ asciidoc:
     page-attributes: attributes.adoc
 
     # User namespace shortcuts
-    build_ns: user-${guid}-build
-    dev_ns: user-${guid}-dev
-    prod_ns: user-${guid}-prod
+    build_ns: user-${GUID}-build
+    dev_ns: user-${GUID}-dev
+    prod_ns: user-${GUID}-prod
 
     # Console URLs
     # openshift_console_url: predefined by RHDP
