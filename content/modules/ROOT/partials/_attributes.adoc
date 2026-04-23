@@ -13,9 +13,9 @@
 :password: {user_password}
 
 // Namespace shortcuts
-:build_ns: {user_name}-build
-:dev_ns: {user_name}-dev
-:prod_ns: {user_name}-prod
+:build_ns: {user}-build
+:dev_ns: {user}-dev
+:prod_ns: {user}-prod
 
 // Product versions
 :ocp_version: 4.21
