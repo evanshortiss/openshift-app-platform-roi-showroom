@@ -262,7 +262,7 @@ Your `git push` triggered a webhook in GitLab, which started a new PipelineRun i
 +
 image::m2/openshift-build-push.png[PipelineRun triggered by the Git Push is now progressing,link=self,window=blank,width=700,title="A new PipelineRun triggered by your push"]
 
-. You should see a new PipelineRun in progress. Click on it to watch the stages:
+. You should see a new PipelineRun in progress. Click on th link in th e *Last run* column to watch the stages:
 +
 * *clone* -- pulls your latest code from GitLab
 * *maven-build* -- compiles the application and runs unit tests
