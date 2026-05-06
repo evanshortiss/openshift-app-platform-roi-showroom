@@ -228,7 +228,7 @@ image::m2/quarkus-app-am-pm.png[Quarkus application showing AM/PM in the inbox,l
 
 . Review the changed files in the *Changes* section
 
-. Stage your changes by clicking the *+* icon next to each changed file (or click *+* next to *Changes* to stage all)
+.  Stage your changes by clicking the *pass:[+]* icon next to each changed file (or click *pass:[+]* next to *Changes* to stage all)
 
 . Enter a commit message, for example:
 +
